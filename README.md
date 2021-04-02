@@ -10,6 +10,11 @@ A reference to how I do my Laravel/Apache/MySQL setup using Docker and ECR
 4. Run the containers
 
 
+## Commands WIP
+`sudo docker exec -it app_container_name php artisan migrate`
+`sudo LE_DIR=./certs docker-compose -f docker-compose.prod.yml up -d`
+`sudo docker image rm imagename`
+
 ## Caveats
 May want to set specific AWS keys with specific permissions for pulling/pushing on ECR repos.
 You can do this nicely by making a new policy, this is documented in the `aws` folder.
