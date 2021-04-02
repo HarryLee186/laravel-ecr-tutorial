@@ -15,6 +15,10 @@ A reference to how I do my Laravel/Apache/MySQL setup using Docker and ECR
 `sudo LE_DIR=./certs docker-compose -f docker-compose.prod.yml up -d`
 `sudo docker image rm imagename`
 
+## Notes WIP
+
+Need to have `certs` folder on the server
+
 ## Caveats
 May want to set specific AWS keys with specific permissions for pulling/pushing on ECR repos.
 You can do this nicely by making a new policy, this is documented in the `aws` folder.
