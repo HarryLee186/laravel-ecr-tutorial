@@ -21,6 +21,9 @@ Need to have `certs` folder on the server
 
 https://certbot.eff.org/lets-encrypt/ubuntuother-apache - Need certonly as we reference the certs in the config anyway
 
+After adding certbot to container
+`sudo docker exec -it site_app_1 certbot certonly`
+
 ## Caveats
 May want to set specific AWS keys with specific permissions for pulling/pushing on ECR repos.
 You can do this nicely by making a new policy, this is documented in the `aws` folder.
